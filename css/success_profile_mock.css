@@ -55,12 +55,12 @@
 /* Stats Row CSS Begins */
 .statrow-col {
     overflow: auto;
-    height: 240px;;
+    height: 260px;;
     border-right: dashed 2px gray;
 }
 
 .statrow-block-data {
-    height: 160px;
+    height: 180px;
 }
 
 .statrow-block-action {
@@ -175,8 +175,42 @@
 /* Stats Row CSS Ends */
 
 /* Data Row CSS Begins */
+.datarow-title-block {
+    margin-top: 20px;
+}
+
+.datarow-title-head {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.datarow-title-action {
+    float: right;
+}
+
+.datarow-title-action a:hover {
+    background-color: #1199B9;
+    color: white;
+}
+
+.datarow-title-action a {
+    text-decoration: none;
+    padding: 12px;
+}
+
+.datarow-title-action span {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1199B9;
+}
+
 .datarow {
-    margin-top: 30px;
+    margin-top: 10px;
     border: solid 3px lightgray;
     box-shadow: 1px 2px 5px #888888;
     min-height: 300px;
@@ -207,7 +241,24 @@
 }
 
 .datarow-col-title {
+    display: block;
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.datarow-col-data {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 /* Data Row CSS Ends */
+
+.fav-icon-star {
+    color: #EBB30D;
+}
+
+.dummy {
+    margin: 100px;
+}
