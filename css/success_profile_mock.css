@@ -1,0 +1,213 @@
+/* Top Menu Navbar CSS Begins */
+.navbar-top-menu {
+    margin-top: 10px;
+    background-color: white;
+}
+
+.navbar-top-menu .navbar-brand img {
+    margin-top: -10px;
+    width: 150px;
+    height: 40px;
+}
+/* Top Menu navbar CSS Ends */
+
+/* Top Well CSS Begins */
+.well-top {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #007DA4;
+    overflow: auto;
+    position: relative;
+}
+
+.well-top-welcome { /* Well welcome */
+    width: 70%;
+    float: left;
+}
+
+.well-top-dropdown { /* Well Dropdown */
+    width: 30%;
+    float: right;
+    margin-top: 30px;
+    position: absolute;
+    right: 30px;
+}
+
+.well-top-dropdown .btn-default {
+    width: 90%;
+    text-align: left;
+    float: right;
+}
+
+.well-top-dropdown .btn-default .caret {
+    display: block;
+    float: right;
+    margin-top: 7px;
+}
+
+.well-top-dropdown .dropdown-menu {
+    width: 90%;
+    margin-left: 10%;
+}
+/* Top Well CSS Ends */
+
+/* Stats Row CSS Begins */
+.statrow-col {
+    overflow: auto;
+    height: 240px;;
+    border-right: dashed 2px gray;
+}
+
+.statrow-block-data {
+    height: 160px;
+}
+
+.statrow-block-action {
+    height: 20px;
+}
+
+.statrow-block-action a {
+    text-decoration: none;
+    padding: 12px;
+}
+
+.statrow-block-action a:hover {
+    background-color: #1199B9;
+    color: white;
+}
+
+.statrow-block-action span {
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1199B9;
+}
+
+.statrow-col-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: #007ACC;
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+/** Stats Success Profile Col CSS Begins **/
+.statrow-success-profile {
+    display: block;
+    font-size: 20px;
+    color: gray;
+    margin: 5px;
+    border-bottom: solid 1px lightgray;
+}
+
+.statrow-success-profile [class|="success-profile-stat"] {
+    font-size: 25px;
+    font-weight: bolder;
+    margin-right: 7px;
+}
+
+.statrow-success-profile .success-profile-stat-1 {
+    color: #873274;
+}
+
+.statrow-success-profile .success-profile-stat-2 {
+    color: #008A95;
+}
+
+.statrow-success-profile .success-profile-stat-3 {
+    color: #578E3F;
+}
+/** Stats Success Profile Col CSS Ends **/
+
+/** Stats Job Descr Col CSS Begins **/
+.statrow-job-descr {
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+
+.statrow-job-descr .statrow-job-descr-stat {
+    font-size: 100px;
+    font-weight: bold;
+    color: #008A95;
+}
+/** Stats Job Descr Col CSS Ends **/
+
+/** Stats Assessment Col CSS Begins **/
+.statrow-assessment-stat {
+    display: block;
+    margin: auto;
+    width: 100px;
+}
+
+.statrow-assessment-chart {
+    margin-top: -70px;
+    margin-left: -50px;
+    font-size: 200px;
+}
+
+.statrow-assessment-chart .cw-pies-counter {
+    color:#fff; 
+}
+
+.statrow-assessment-chart .cw-value-one {
+    color: purple;
+}
+
+.statrow-assessment-chart .cw-value-two {
+    color: white;
+}
+
+.statrow-assessment-stat .statrow-assessment-data {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    margin-top: -165px;
+    margin-left: 12px;
+}
+/** Stats Assessment Col CSS Ends **/
+/* Stats Row CSS Ends */
+
+/* Data Row CSS Begins */
+.datarow {
+    margin-top: 30px;
+    border: solid 3px lightgray;
+    box-shadow: 1px 2px 5px #888888;
+    min-height: 300px;
+    max-height: 600px;
+}
+
+.datarow-top-ribbon {
+    height: 10px;
+    width: -moz-calc(100% + 3px);
+    width: -webkit-calc(100% + 3px);
+    width: -o-calc(100% + 3px);
+    width: calc(100% + 3px);
+    margin-left: -3px;
+    background-color: #008A95;
+}
+
+.datarow-content {
+    padding: 20px;
+}
+
+.datarow-block-data {
+    min-height: 300px;
+    max-height: 600px;
+}
+
+.datarow-col {
+    border-right: solid 1px gray;
+}
+
+.datarow-col-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Data Row CSS Ends */

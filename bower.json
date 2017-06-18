@@ -1,0 +1,20 @@
+{
+  "name": "haygroup_temp",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ronnie Mathew <ronnie@bricksimple.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
