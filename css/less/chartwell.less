@@ -1,0 +1,151 @@
+
+/* ==============================
+Chartwell
+================================*/
+
+// Generate classes for each
+// -----------
+
+// For ring graphs that are inactive
+
+.ringInactiveX (@index) when (@index > 0) {
+  .cw-value-slice@{index} { .ringInactive(@index); }
+  .ringInactiveX(@index - 1);
+}
+.ringInactiveX (0) {}
+
+.ringInactive (@slices) {
+  color: lighten( @gray, ( 53 - ( ( @slices - 1 ) * 1.4 ) ) );
+}
+
+// For ring graphs that are active
+
+.ringActiveX (@index) when (@index > 0) {
+  .cw-value-slice@{index} { .ringActive(@index); }
+  .ringActiveX(@index - 1);
+}
+.ringActiveX (0) {}
+
+.ringActive (@slices) {
+  color: desaturate( spin( @gradingCircleStartColor, -( ( ( @slices - 1 ) * 12.5 ) ) ), 8%);
+}
+
+// For ring graphs that are inactive
+
+.pieActiveX (@index) when (@index > 0) {
+  .cw-value-slice@{index} { .pieActive(@index); }
+  .pieActiveX(@index - 1);
+}
+.pieActiveX (0) {}
+
+.pieActive (@slices) {
+  color: spin( lighten( desaturate( @primaryColor, ( ( ( @slices - 1 ) * 7 ) ) ),  ( @slices - 1 ) * 8.5 ), ( @slices - 1 ) * -12 );
+}
+
+.pieLabelsX (@index) when (@index > 0) {
+  .label-@{index} .swatch { .pieLabels(@index); }
+  .pieLabelsX(@index - 1);
+}
+.pieLabelsX (0) {}
+
+.pieLabels (@slices) {
+  background-color: spin( lighten( desaturate( @primaryColor, ( ( ( @slices - 1 ) * 7 ) ) ),  ( @slices - 1 ) * 8.5 ), ( @slices - 1 ) * -12 );
+}
+
+
+.chartwell-pies {
+  font-size: 150px;
+  height: 150px;
+  width: 150px;
+  .transform( rotate( 180deg ) );
+  .cw-graph {
+    font-size: 150px;
+    height: 150px;
+    line-height: 150px;
+    width: 150px;
+  }
+  &.large {
+    font-size: 300px;
+    height: 300px;
+    width: 300px;
+    .cw-graph {
+      font-size: 300px;
+      height: 300px;
+      line-height: 300px;
+      width: 300px;
+    }
+  }
+  &.pie {
+    .pieActiveX( @maxSlicesInPie );
+  }
+  .cw-pies-counter {
+    color: #fff;
+  }
+  &.ring {
+    span {
+      text-shadow:
+       -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+         1px 1px 0 #fff;
+      ;
+    }
+    &.inactive {
+      .ringInactiveX( @slicesInRing );
+    }
+    &.active {
+      .ringActiveX( @slicesInRing );
+    }
+  }
+}
+
+.salary-chart-labels {
+  .pieLabelsX( @maxSlicesInPie );
+}
+
+// represents job grade indicator relative to a CSS class integer value passed
+// adjust @totalSteps, @hayGradeLast, and these helpers will do the rest
+// reflect that scale spanned across the @slicesInRing value
+
+@totalSteps: 20;
+@perStepIncrement: 1;
+@lowestValue: 1;
+
+// pass @i (grade value), @j (slice number), @totalSteps (calculated
+// automatically), and @perStepIncrement (also calculated dynamically) to get
+// back an @gray color override, ONLY IF correct given the grade values
+// position relative to scale
+
+.overrideColorInScale( @i, @j, @lowestValue, @totalSteps, @perStepIncrement ) when ( ( @i / @perStepIncrement ) < ( @j ) ) {
+    .grade-scale-@{i} .chartwell-pies.ring.active .cw-value-slice@{j} {
+      color: lighten( @gray, ( 60 - ( @j - 1 ) ) );
+    }
+}
+
+// This helper loops over a set of two loops (grade and number of slices)
+// at each iteration it calls to the .overrideColorInScale helper function to
+// compile CSS for this grading circle "slice" only if it shoudl be dimmed to gray
+ 
+.ringPartialActive (@i) when (@i > 0) {
+
+  @maxj: @slicesInRing;
+  .inner-loop (@j) when (@j > ( @lowestValue - 1 ) ) {
+
+    .overrideColorInScale( @i, @j, @lowestValue, @totalSteps, @perStepIncrement );
+
+    .inner-loop(@j - 1);
+  }
+  .inner-loop (0) {}
+  
+  .inner-loop(@maxj);
+
+  .ringPartialActive(@i - 1);
+}
+.ringPartialActive (0) {}
+
+// special classes according to hay grades
+.ringPartialActive( @totalSteps );
+
+.grade-scale-0 .chartwell-pies.ring.active {
+  .ringInactiveX( @slicesInRing );
+}

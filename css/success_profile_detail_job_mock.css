@@ -1,0 +1,303 @@
+/* Top Menu Navbar CSS Begins */
+.navbar-top-menu {
+    margin-top: 10px;
+    background-color: white;
+}
+
+.navbar-top-menu .navbar-brand img {
+    margin-top: -10px;
+    width: 150px;
+    height: 40px;
+}
+/* Top Menu navbar CSS Ends */
+
+/* Top Well CSS Begins */
+.well-top {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #007DA4;
+    margin-bottom: 0;
+    float: left;
+    position: relative;
+}
+
+.well-top-breadcrumbs {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: darkgray;
+    width: 90%;
+    float: left;
+}
+
+.well-top-search {
+    width: auto;
+    float: right;
+}
+
+.well-top-avatar {
+    width: 150px;
+    float: left;
+    margin: 20px;
+}
+
+.well-top-title-block {
+    width: auto;
+    float: left;
+    margin: 20px;
+}
+
+.well-top-tab-entry {
+    font-size: 10px;
+    font-weight: normal;
+    margin-right: 30px;
+}
+
+.well-top-tab-entry a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+
+.well-top-tab-entry a:hover {
+    background-color: white;
+    color: #1199B9;
+}
+
+.well-top-whocreated, .well-top-whomodified {
+    font-size: 9px;
+    font-weight: normal;
+    font-style: italic;
+    color: white;
+    margin-right: 50px;
+}
+
+.well-top-dropmenu-container {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+}
+
+.well-top-dd {
+    float: left;
+}
+
+.well-top-dd-stat {
+    display: inline-block;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+/* Top Well CSS Ends */
+
+/* Stats Row CSS Begins */
+.spdj-statrow {
+    width: 100%;
+    min-height: 500px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f9f9;
+}
+
+.spdj-statrow .statrow-header {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.spdj-statrow .statrow-col-container {
+    position: relative;
+}
+
+.spdj-statrow .statrow-col {
+    min-height: 360px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border: solid 1px lightgray; 
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px #888888;
+}
+
+.spdj-statrow .statrow-col:nth-child(1) {
+    border-top: solid 7px #008a95;
+}
+
+.spdj-statrow .statrow-col:nth-child(2) {
+    border-top: solid 7px #731f61;
+}
+
+.spdj-statrow .statrow-col:nth-child(3) {
+    border-top: solid 7px #578f3f;
+}
+
+@media only screen and (min-width: 780px) {
+    .spdj-statrow .statrow-col {
+        width: 30%;
+        margin: 20px;
+    }
+
+    .spdj-statrow .statrow-col:nth-child(1) {
+        position: absolute;
+        left: 1%;
+    }
+
+    .spdj-statrow .statrow-col:nth-child(2) {
+        position: absolute;
+        left: 33.3%;
+    }
+
+    .spdj-statrow .statrow-col:nth-child(3) {
+        position: absolute;
+        left: 65.5%;
+    }
+}
+
+.spdj-statrow .statrow-col-title {
+    margin: 5px;
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: bold;
+    color: #6c7480;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.spdj-statrow .statrow-col-jc-container {
+    border-bottom: dotted 1px #979797;
+    margin: 5px;
+    padding: 10px 10px 0px 10px;
+}
+
+.spdj-statrow .statrow-col-jc-container:last-child {
+    border-bottom: none;
+}
+
+.spdj-statrow .statrow-col-jc-title {
+    font-family: ProximaNova;
+    font-size: 13px;
+    line-height: 15.3px;
+    letter-spacing: 0.3px;
+    color: #868686;
+}
+
+.spdj-statrow .statrow-col-jc-detail {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.spdj-statrow .statrow-col-jc-content {
+    display: inline-block;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-family: ProximaNova;
+    font-size: 15px;
+    text-align: left;
+    color: #000000;
+}
+
+.spdj-statrow .statrow-col-jc-icon {
+    display: block;
+    margin-top: 2px;
+    float: left;
+    width: 20px;
+    color: #EBB30D;
+}
+
+.spdj-statrow .statrow-col-jc-text {
+    display: block;
+    float: left;
+    width: 80%;
+}
+
+.spdj-statrow .statrow-col-vc-title {
+    font-family: ProximaNova;
+    font-size: 13px;
+    line-height: 15.3px;
+    letter-spacing: 0.3px;
+    color: #868686;
+    margin: 20px;
+}
+
+.spdj-statrow .statrow-col-vc-detail {
+    margin-top: 5px;
+    margin-bottom: 5px;  
+}
+
+.spdj-statrow .statrow-col-vc-content {
+    display: block;
+    float: left;
+    width: 80%;
+    margin: 5px 20px;
+}
+
+.spdj-statrow .statrow-col-vc-text {
+    display: block;
+    float: left;
+    font-family: ProximaNova;
+    font-size: 15px;
+    text-align: left;
+    color: #000000;
+}
+
+.spdj-statrow .statrow-col-vc-stat {
+    display: block;
+    float: right;
+}
+
+.spdj-statrow .statrow-col-vc-chart {
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.spdj-statrow .statrow-col-op-chart {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
+.spdj-statrow .statrow-col-op-content {
+    display: block;
+    width: 90%;
+    margin: 0 20px 20px 20px;
+}
+
+.spdj-statrow .statrow-col-op-text {
+    display: inline-block;
+    width: 45%;
+}
+
+.spdj-statrow .statrow-col-op-stat {
+    display: block;
+    width: 50%;
+    text-align: right;
+    float: right;
+}
+
+.spdj-statrow .statrow-col-op-icon {
+    display: block;
+    float: right;
+    margin-top: 5px;
+    width: 13px;
+}
+
+.spdj-statrow .statrow-col-op-select {
+    display: block;
+    float: right;
+}
+
+
+/* Stats Row CSS Ends */
+
+.dummy {
+    margin: 100px;
+}
