@@ -8,6 +8,18 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link href="./css/lib.css" rel="stylesheet"/>
     <link href="./css/success_profile_detail_job_mock.css" rel="stylesheet"/>
+    <style>
+        .ring {
+            margin-top: 11px;
+        }
+
+        .grade-label {
+            position: absolute;
+            top: 40px;
+            right: 52px;
+        }
+
+    </style>
 </head>
 <body>
     <div class="container">
@@ -120,12 +132,14 @@
             </div>
         </div>
         <!-- Prominent Header Well Ends -->
+
+        <!-- Statistics Three Column Row Begins -->
         <div class="row spdj-statrow">
             <div class="statrow-header">
                 <span class="statrow-header-content">The Supply Chain Individual plans and manages allocated supply chain resources and demand processes.</span>
             </div>
-            <div class="statrow-col-container">
-                <div class="col-lg-4 col-md-6 statrow-col">
+            <div class="statrow-col-container"> <!-- Container Div for the Three Stats Columns Begins -->
+                <div class="col-lg-4 col-md-6 statrow-col"> <!-- Job Characteristics Div Container Begins -->
                     <div class="statrow-col-title">JOB CHARACTERISTICS</div>
                     <div class="statrow-col-jc-container">
                         <div class="statrow-col-jc-title">Primary responsibilites</div>
@@ -153,8 +167,8 @@
                             </span>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 statrow-col">
+                </div> <!-- Job Characteristics Div Container Ends -->
+                <div class="col-lg-4 col-md-6 statrow-col"> <!-- Values & Culture Div Container Begins -->
                     <div class="statrow-col-title">VALUES &amp; CULTURE</div>
                     <div class="statrow-col-vc-container">
                         <div class="statrow-col-vc-title">Top Drivers</div>
@@ -162,29 +176,32 @@
                             <span class="statrow-col-vc-content">
                                 <span class="statrow-col-vc-text">Independence</span>
                                 <span class="statrow-col-vc-stat">90%</span>
-                                <span class="chartwell-bars statrow-col-vc-chart">90+10</span>
+                                <!-- <span class="chartwell-bars statrow-col-vc-chart">90+10</span> -->
+                                <img src="images/90pct_purple_bar_chart.png" />
                             </span>
                             <span class="statrow-col-vc-content">
                                 <span class="statrow-col-vc-text">Challenge</span>
                                 <span class="statrow-col-vc-stat">86%</span>
-                                <span class="chartwell-bars statrow-col-vc-chart">86+14</span>
+                                <!-- <span class="chartwell-bars statrow-col-vc-chart">86+14</span> -->
+                                <img src="images/86pct_purple_bar_chart.png" />
                             </span>
                             <span class="statrow-col-vc-content">
                                 <span class="statrow-col-vc-text">Collaboration</span>
                                 <span class="statrow-col-vc-stat">85%</span>
-                                <span class="chartwell-bars statrow-col-vc-chart">85+15</span>
+                                <!-- <span class="chartwell-bars statrow-col-vc-chart">85+15</span> -->
+                                <img src="images/85pct_purple_bar_chart.png" />
                             </span>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 statrow-col">
+                </div> <!-- Values & Culture Div Container Ends -->
+                <div class="col-lg-4 col-md-6 statrow-col"> <!-- Organization Policy Div Container Begins -->
                     <div class="statrow-col-title">ORGANIZATION POLICY</div>
                     <div class="statrow-col-op-container">
                         <div class="statrow-col-op-chart">
-                            <div class="grade-container large grade-scale-17">
+                            <div class="grade-container large grade-scale-5">
                                 <div class="job-grade">
-                                    <h2 class="text-center">GRADE</h2>
-                                    <h1 class="grade text-center">12</h1>
+                                    <h2 class="grade-label text-center">GRADE</h2>
+                                    <h1 class="grade text-center">5</h1>
                                 </div>
                                 <div class="chartwell-pies ring active">
                                     5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+5+M
@@ -218,8 +235,19 @@
                             </span>
                         </div>
                     </div>
-                </div>
-            </div>
+                </div>  <!-- Organization Policy Div Container Ends -->
+            </div> <!-- Container Div for the Three Stats Columns Ends -->
+        </div>
+        <!-- Statistics Three Column Row Ends -->
+
+        <!-- -->
+        <div class="row spdj-tabsrow">
+            <ul>
+                <li><a href="#profile-det">Profile Details</a></li>
+                <li><a href="#hiring-role">Hiring Role</a></li>
+                <li><a href="#talent-mgmt">Talent Management</a></li>
+                <li><a href="#insights">Insights</a></li>
+            </ul>
         </div>
     </div>
 
