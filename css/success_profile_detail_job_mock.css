@@ -933,6 +933,168 @@
 }
 /* Technical Competencies Card CSS Ends */
 
+/* Education Card CSS Begins */
+.spdj-main-row .spdj-main-edu-card {
+    width: 100%;
+    margin-top: 30px;
+    float: left;
+    padding: 20px;
+    border: solid 1px lightgray;
+    box-shadow: 1px 2px 5px #888888;
+    background-color: #ffffff;
+}
+
+.spdj-main-row .spdj-main-edu-title {
+    display: block;
+    width: 80%;
+    float: left;
+    font-family: ProximaNova;
+    font-size: 24px;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #000000;
+}
+
+.spdj-main-row .spdj-main-edu-help {
+    font-size: 15px;
+}
+
+.spdj-main-row .spdj-main-edu-title-container {
+    width: 100%;
+    float: left;
+}
+
+.spdj-main-row .spdj-main-edu-lvl-title {
+    display: block;
+    width: 20%;
+    float: left;
+    margin-top: 8px;
+    padding-left: 20px;
+    font-family: ProximaNova;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #a6a6a6;
+}
+
+.spdj-main-row .spdj-main-edu-item-container {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: dotted 1px lightgray;
+}
+
+.spdj-main-row .spdj-main-edu-item-text-container {
+    width: 80%;
+    float: left;
+}
+
+.spdj-main-row .spdj-main-edu-item-title {
+    display: block;
+    margin: 10px 0;
+    font-family: ProximaNova;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    color: #027ca3;
+}
+
+.spdj-main-row .spdj-main-edu-item-icon {
+    color: #EBB30D;   
+}
+
+.spdj-main-row .spdj-main-edu-level {
+    font-family: ProximaNova;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    color: #027ca3;
+}
+/* Education Card CSS Ends */
+
+/* Experience Card CSS Begins */
+.spdj-main-row .spdj-main-exp-card {
+    width: 100%;
+    margin-top: 30px;
+    float: left;
+    padding: 20px;
+    border: solid 1px lightgray;
+    box-shadow: 1px 2px 5px #888888;
+    background-color: #ffffff;
+}
+
+.spdj-main-row .spdj-main-exp-title {
+    display: block;
+    width: 80%;
+    float: left;
+    font-family: ProximaNova;
+    font-size: 24px;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #000000;
+}
+
+.spdj-main-row .spdj-main-exp-help {
+    font-size: 15px;
+}
+
+.spdj-main-row .spdj-main-exp-title-container {
+    width: 100%;
+    float: left;
+}
+
+.spdj-main-row .spdj-main-exp-lvl-title {
+    display: block;
+    width: 20%;
+    float: left;
+    margin-top: 8px;
+    padding-left: 20px;
+    font-family: ProximaNova;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #a6a6a6;
+}
+
+.spdj-main-row .spdj-main-exp-item-container {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: dotted 1px lightgray;
+}
+
+.spdj-main-row .spdj-main-exp-item-text-container {
+    width: 80%;
+    float: left;
+}
+
+.spdj-main-row .spdj-main-exp-item-title {
+    display: block;
+    margin: 10px 0;
+    font-family: ProximaNova;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    color: #027ca3;
+}
+
+.spdj-main-row .spdj-main-exp-item-icon {
+    color: #EBB30D;   
+}
+
+.spdj-main-row .spdj-main-exp-level {
+    font-family: ProximaNova;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    color: #027ca3;
+}
+/* Experience Card CSS Ends */
+
 /* Main Cards Rows CSS Ends */
 
 .dummy {
