@@ -24,25 +24,27 @@
 <body>
     <div class="container">
         <!-- Navigation Bar Begins -->
-        <nav class="navbar navbar-default navbar-top-menu">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href=""><img src="./images/korn-ferry-logo.jpg" alt="Korn Ferry"></a>
+        <header class="navbar-container">
+            <nav class="navbar navbar-default navbar-fixed-top navbar-top-menu">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href=""><img src="./images/korn-ferry-logo.jpg" alt="Korn Ferry"></a>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav pull-right">
+                            <li><a href="#Settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+                            <li><a href="#User"><span class="glyphicon glyphicon-user"></span></a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav pull-right">
-                        <li><a href="#Settings"><span class="glyphicon glyphicon-cog"></span></a></li>
-                        <li><a href="#User"><span class="glyphicon glyphicon-user"></span></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
         <!-- Navigation Bar Ends -->
 
         <!-- Prominent Header Well Begins -->
@@ -240,14 +242,166 @@
         </div>
         <!-- Statistics Three Column Row Ends -->
 
-        <!-- -->
+        <!-- Middle Tabs CSS Begins -->
         <div class="row spdj-tabsrow">
-            <ul>
+            <ul class="spdj-tabs" data-spy="affix" data-offset-top="710">
                 <li><a href="#profile-det">Profile Details</a></li>
                 <li><a href="#hiring-role">Hiring Role</a></li>
                 <li><a href="#talent-mgmt">Talent Management</a></li>
                 <li><a href="#insights">Insights</a></li>
             </ul>
+        </div>
+        <!-- Middle Tabs CSS Ends -->
+
+        <div class="row spdj-main-row">
+            <div class="spdj-side-nav-container">
+                <div class="spdj-side-nav" data-spy="affix" data-offset-top="730">
+                    <span class="spdj-side-nav-menu spdj-side-nav-title-active">JOB REQUIREMENTS</span>
+                    <span class="spdj-side-nav-menu spdj-side-nav-menu-selected"><a href="#profile-det">Responsibilities</a></span>
+                    <span class="spdj-side-nav-menu"><a href="#hiring-role">Behavioral Competencies</a></span>
+                    <span class="spdj-side-nav-menu"><a href="#talent-mgmt">Technical Competencies</a></span>
+                    <span class="spdj-side-nav-menu"><a href="#insights">Education</a></span>
+                    <span class="spdj-side-nav-menu"><a href="#insights">Experience</a></span>
+                    <span class="spdj-side-nav-menu"><a href="#insights">Traits</a></span>
+                    <span class="spdj-side-nav-menu"><a href="#insights">Critical Experiences</a></span>
+
+                    <span class="spdj-side-nav-menu spdj-side-nav-title">VALUES &amp; CULTURE</span>
+                    <span class="spdj-side-nav-menu"><a href="#profile-det">Drivers</a></span>
+                    <span class="spdj-side-nav-menu"><a href="#hiring-role">Cultural Factors</a></span>
+                    <span class="spdj-side-nav-menu"><a href="#talent-mgmt">Leadership Styles</a></span>
+                    <span class="spdj-side-nav-menu"><a href="#insights">Job Characteristics</a></span>
+
+                    <span class="spdj-side-nav-menu spdj-side-nav-title">ORGANIZATIONAL POLICY</span>
+                    <span class="spdj-side-nav-menu"><a href="#profile-det">Pay &amp; Rewards</a></span>
+                    <span class="spdj-side-nav-menu"><a href="#hiring-role">Work Conditions</a></span>
+                </div>
+            </div>
+            <div class="spdj-main-container">
+                <div class="spdj-main-jr-card">
+                    <div class="spdj-main-jr-title">Job Requirements Overview</div>
+                    <div class="spdj-main-jr-desc">
+                        Explore the values and cultural elements below that contribute to achieving success in this role.
+                    </div>
+                    <div class="spdj-main-jr-stats-container">
+                        <div class="spdj-main-jr-chart">
+                            <span class="spdj-main-jr-chart-title">RESPONSIBILITIES</span>
+                            <img src="images/responsibilities_verticalbar_chart.png" height="400px" width="400px" />
+                        </div>
+                        <div class="spdj-main-jr-bcomp">
+                            <span class="spdj-main-jr-bcomp-title">BEHAVIORAL COMPETENCIES</span>
+                            <div class="spdj-main-bcomp-stat-container">
+                                <span class="spdj-main-bcomp-stat">2</span>
+                                <div class="spdj-main-bcomp-detail">
+                                    <span class="spdj-main-bcomp-title">mission critical</span>
+                                    <span class="spdj-main-bcomp-item">
+                                        <span class="glyphicon glyphicon-circle-arrow-up spdjmain-bcomp-icon"></span>
+                                        Decision Quality
+                                    </span>
+                                    <span class="spdj-main-bcomp-item">
+                                        <span class="glyphicon glyphicon-circle-arrow-up spdjmain-bcomp-icon"></span>
+                                        Attention to Detail
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spdj-main-jr-reqsnap">
+                            <span class="spdj-main-reqsnap-title">REQUIREMENTS SNAPSHOT</span>
+                            <span class="spdj-main-reqsnap-det">
+                                <span class="spdj-main-reqsnap-icon"><img src="images/responsibility-icon.png"/></span>
+                                Compenetent in Business Insight
+                            </span>
+                            <span class="spdj-main-reqsnap-det">
+                                <span class="spdj-main-reqsnap-icon"><img src="images/behavioral-icon.png"/></span>
+                                Requires a Bachelors Degree
+                            </span>
+                            <span class="spdj-main-reqsnap-det">
+                                <span class="spdj-main-reqsnap-icon"><img src="images/competency-icon.png"/></span>
+                                Driven heavily by Independence
+                            </span>
+                            <span class="spdj-main-reqsnap-det">
+                                <span class="spdj-main-reqsnap-icon"><img src="images/experience-icon.png"/></span>
+                                Previous experience: 3 - 6 years
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spdj-main-respon-card">
+                    <div class="spdj-main-respon-title-container">
+                        <span class="spdj-main-respon-icon"><img src="images/responsibility-icon@2x.png"/></span>
+                        <span class="spdj-main-respon-title">Responsibilities</span>
+                        <span class="spdj-main-respon-help"><span class="glyphicon glyphicon-question-sign"></span></span>
+                        <span class="spdj-main-respon-lvl-title">Level Required</span>
+                    </div>
+                    <div class="spdj-main-respon-item-container">
+                        <span class="spdj-main-respon-item-title">
+                            <span class="glyphicon glyphicon-circle-arrow-up spdj-main-respon-item-icon"></span>
+                            Independence
+                        </span>
+                        <span class="spdj-main-respon-item-detail">
+                            Prefers an entrepreneurial approach and limited organizational constraints.
+                        </span>
+                        <div class="spdj-main-respon-item-chart">
+                            <div class="chartwell-pies">
+                                10+90+O
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spdj-main-respon-item-container">
+                        <span class="spdj-main-respon-item-title">
+                            <span class="glyphicon glyphicon-circle-arrow-up spdj-main-respon-item-icon"></span>
+                            Challenge
+                        </span>
+                        <span class="spdj-main-respon-item-detail">
+                            Motivated by achievement in the face of tough obstacles.
+                        </span>
+                        <div class="spdj-main-respon-item-chart">
+                            <div class="chartwell-pies">
+                                10+90+O
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spdj-main-respon-item-container">
+                        <span class="spdj-main-respon-item-title">
+                            Collaboration
+                        </span>
+                        <span class="spdj-main-respon-item-detail">
+                            A preference for work-related interdependence, group decision making, and pursuing shared goals.
+                        </span>
+                        <div class="spdj-main-respon-item-chart">
+                            <div class="chartwell-pies">
+                                40+60+O
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spdj-main-respon-item-container">
+                        <span class="spdj-main-respon-item-title">
+                            Power
+                        </span>
+                        <span class="spdj-main-respon-item-detail">
+                            Motivated to seek influence, recognition, and increasing levels of responsibility.
+                        </span>
+                        <div class="spdj-main-respon-item-chart">
+                            <div class="chartwell-pies">
+                                50+50+O
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spdj-main-respon-item-container">
+                        <span class="spdj-main-respon-item-title">
+                            Structure
+                        </span>
+                        <span class="spdj-main-respon-item-detail">
+                            A preference for work-related interdependence, group decision making, and pursuing shared goals.
+                        </span>
+                        <div class="spdj-main-respon-item-chart">
+                            <div class="chartwell-pies">
+                                25+75+O
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -258,6 +412,8 @@
         window.onload = function() {
             chartwell();
         }
+
+
     </script>
 </body>
 </html>
