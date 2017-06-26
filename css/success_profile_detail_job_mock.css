@@ -5,6 +5,16 @@
 }
 /* Font Declarations Ends */
 
+.ring {
+    margin-top: 11px;
+}
+
+.grade-label {
+    position: absolute;
+    top: 40px;
+    right: 52px;
+}
+
 /* Top Menu Navbar CSS Begins */
 .navbar-container {
     width: 100%;
@@ -708,8 +718,9 @@
 }
 
 .spdj-main-row .spdj-main-respon-item-text-container {
-    width: 80%;
+    width: 60%;
     float: left;
+    margin-right: 5px;
 }
 
 .spdj-main-row .spdj-main-respon-item-title {
@@ -734,14 +745,15 @@
 }
 
 .spdj-main-row .spdj-main-respon-item-chart-container {
-    width: 20%; 
-    float: left;
+    width: 30%; 
+    float: right;
     position: relative;
 }
 
 .spdj-main-row .spdj-main-respon-item-chart {
-    width: 110px;
-    height: 110px;
+    width: 125px;
+    height: 125px;
+    float: right;
 }
 
 .spdj-main-row .spdj-main-respon-item-stat {
@@ -749,7 +761,7 @@
     height: 30px;
     position: absolute;
     top: 50px;
-    left: 50px;
+    right: 45px;
     font-family: ProximaNova;
     font-size: 18px;
     font-weight: 300;
@@ -830,8 +842,9 @@
 }
 
 .spdj-main-row .spdj-main-bcomp-item-text-container {
-    width: 80%;
+    width: 60%;
     float: left;
+    margin-right: 5px;
 }
 
 .spdj-main-row .spdj-main-bcomp-item-title {
@@ -853,6 +866,12 @@
     font-size: 15px;
     text-align: left;
     color: #898989;
+}
+
+.spdj-main-row .spdj-main-bcomp-item-chart-container {
+    width: 30%; 
+    float: right;
+    position: relative;
 }
 
 .spdj-main-row .spdj-main-bcomp-item-chart {
@@ -922,8 +941,9 @@
 }
 
 .spdj-main-row .spdj-main-tech-item-text-container {
-    width: 80%;
+    width: 60%;
     float: left;
+    margin-right: 5px;
 }
 
 .spdj-main-row .spdj-main-tech-item-title {
@@ -945,6 +965,12 @@
     font-size: 15px;
     text-align: left;
     color: #898989;
+}
+
+.spdj-main-row .spdj-main-tech-item-chart-container {
+    width: 30%; 
+    float: right;
+    position: relative;
 }
 
 .spdj-main-row .spdj-main-tech-item-chart {
