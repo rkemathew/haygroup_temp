@@ -21,7 +21,7 @@
 
     </style>
 </head>
-<body>
+<body data-spy="scroll" data-target="#spdj-side-nav" data-offset="170">
     <div class="container">
         <!-- Navigation Bar Begins -->
         <header class="navbar-container">
@@ -256,34 +256,34 @@
         <!-- Main Row Container holding the side nav and the different cards Begins -->
         <div class="row spdj-main-row">
             <!-- Side Navbar Begins -->
-            <div class="spdj-side-nav-container">
-                <div class="spdj-side-nav" data-spy="affix" data-offset-top="758">
-                    <span class="spdj-side-nav-menu spdj-side-nav-title-active">JOB REQUIREMENTS</span>
-                    <span class="spdj-side-nav-menu spdj-side-nav-menu-selected"><a href="#profile-det">Responsibilities</a></span>
-                    <span class="spdj-side-nav-menu"><a href="#hiring-role">Behavioral Competencies</a></span>
-                    <span class="spdj-side-nav-menu"><a href="#talent-mgmt">Technical Competencies</a></span>
-                    <span class="spdj-side-nav-menu"><a href="#insights">Education</a></span>
-                    <span class="spdj-side-nav-menu"><a href="#insights">Experience</a></span>
-                    <span class="spdj-side-nav-menu"><a href="#insights">Traits</a></span>
-                    <span class="spdj-side-nav-menu"><a href="#insights">Critical Experiences</a></span>
+            <nav id="spdj-side-nav" class="navbar spdj-side-nav-container">
+                <ul class="nav navbar-nav spdj-side-nav" data-spy="affix" data-offset-top="730">
+                    <li class="spdj-side-nav-title-active">JOB REQUIREMENTS</li>
+                    <li class="active"><a href="#jr-respon">Responsibilities</a></li>
+                    <li><a href="#jr-bcomp">Behavioral Competencies</a></li>
+                    <li><a href="#jr-tech">Technical Competencies</a></li>
+                    <li><a href="#jr-edu">Education</a></li>
+                    <li><a href="#jr-exp">Experience</a></li>
+                    <li><a href="#jr-trait">Traits</a></li>
+                    <li><a href="#jr-critexp">Critical Experiences</a></li>
 
-                    <span class="spdj-side-nav-menu spdj-side-nav-title">VALUES &amp; CULTURE</span>
-                    <span class="spdj-side-nav-menu"><a href="#profile-det">Drivers</a></span>
-                    <span class="spdj-side-nav-menu"><a href="#hiring-role">Cultural Factors</a></span>
-                    <span class="spdj-side-nav-menu"><a href="#talent-mgmt">Leadership Styles</a></span>
-                    <span class="spdj-side-nav-menu"><a href="#insights">Job Characteristics</a></span>
+                    <li class="spdj-side-nav-title">VALUES &amp; CULTURE</li>
+                    <li><a href="#vc-drivers">Drivers</a></li>
+                    <li><a href="#vc-cultfact">Cultural Factors</a></li>
+                    <li><a href="#vc-leadstyles">Leadership Styles</a></li>
+                    <li><a href="#vc-jobchars">Job Characteristics</a></li>
 
-                    <span class="spdj-side-nav-menu spdj-side-nav-title">ORGANIZATIONAL POLICY</span>
-                    <span class="spdj-side-nav-menu"><a href="#profile-det">Pay &amp; Rewards</a></span>
-                    <span class="spdj-side-nav-menu"><a href="#hiring-role">Work Conditions</a></span>
-                </div>
-            </div>
+                    <li class="spdj-side-nav-title">ORGANIZATIONAL POLICY</li>
+                    <li><a href="#op-payrewards">Pay &amp; Rewards</a></li>
+                    <li><a href="#op-workcond">Work Conditions</a></li>
+                </ul>
+            </nav>
             <!-- Side Navbar Ends -->
 
             <!-- Cards Container Begins -->
             <div class="spdj-main-container">
                 <!-- Job Requirements Card Begins -->
-                <div class="spdj-main-jr-card">
+                <div id="jr-overview" class="spdj-main-jr-card">
                     <div class="spdj-main-jr-title">Job Requirements Overview</div>
                     <div class="spdj-main-jr-desc">
                         Explore the values and cultural elements below that contribute to achieving success in this role.
@@ -334,7 +334,7 @@
                 <!-- Job Requirements Card Ends -->
 
                 <!-- Responsibilities Card Begins -->
-                <div class="spdj-main-respon-card">
+                <div id="jr-respon" class="spdj-main-respon-card">
                     <div class="spdj-main-respon-title-container">
                         <span class="spdj-main-respon-title">
                             <span class="spdj-main-respon-icon"><img src="images/responsibility-icon@2x.png"/></span>
@@ -429,7 +429,7 @@
                 <!-- Responsibilities Card Ends -->
 
                 <!-- Behavioral Competencies Card Begins -->
-                <div class="spdj-main-bcomp-card">
+                <div id="jr-bcomp" class="spdj-main-bcomp-card">
                     <div class="spdj-main-bcomp-title-container">
                         <span class="spdj-main-bcomp-title">
                             <span class="spdj-main-bcomp-icon"><img src="images/behavioral-icon@2x.png"/></span>
@@ -524,7 +524,7 @@
                 <!-- Behavioral Competencies Card Ends -->
 
                 <!-- Technical Competencies Card Begins -->
-                <div class="spdj-main-tech-card">
+                <div id="jr-tech" class="spdj-main-tech-card">
                     <div class="spdj-main-tech-title-container">
                         <span class="spdj-main-tech-title">
                             <span class="spdj-main-tech-icon"><img src="images/technical-icon@2x.png"/></span>
@@ -619,7 +619,7 @@
                 <!-- Technical Competencies Card Ends -->
 
                 <!-- Education Card Begins -->
-                <div class="spdj-main-edu-card">
+                <div id="jr-edu" class="spdj-main-edu-card">
                     <div class="spdj-main-edu-title-container">
                         <span class="spdj-main-edu-title">
                             <span class="spdj-main-edu-icon"><img src="images/education-icon@2x.png"/></span>
@@ -643,7 +643,7 @@
                 <!-- Education Card Ends -->
 
                 <!-- Experience Card Begins -->
-                <div class="spdj-main-exp-card">
+                <div id="jr-exp" class="spdj-main-exp-card">
                     <div class="spdj-main-exp-title-container">
                         <span class="spdj-main-exp-title">
                             <span class="spdj-main-exp-icon"><img src="images/experience-icon@2x.png"/></span>
@@ -665,7 +665,10 @@
                     </div>
                 </div>
                 <!-- Experience Card Ends -->
+
+                <div class="dummy"></div>
             </div>
+
             <!-- Cards Container Ends -->
         </div>
         <!-- Main Row Container holding the side nav and the different cards Ends -->

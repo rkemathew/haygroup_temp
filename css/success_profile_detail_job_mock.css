@@ -418,6 +418,7 @@
     top: 50px;
     left: 0px;
     width: 100%;
+    z-index: 10;
 }
 
 @media (max-width: 1023px) { /* Do not allow the tabs to be affixed for screens smaller than 1024 width */
@@ -440,6 +441,18 @@
     width: 25%;
     height: 500px;
     background-color: #f9f9f9;
+}
+
+.spdj-side-nav-container ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.spdj-side-nav-container ul li {
+    width: 100%;
+    list-style: none;
 }
 
 .spdj-main-row .spdj-side-nav {
@@ -470,18 +483,30 @@
     float: left;
 }
 
-.spdj-main-row .spdj-side-nav-menu {
+.spdj-main-row li {
     display: block;
     width: 100%;
-    padding: 10px 30px;
+    padding: 0 30px;
     text-align: left;
     font-family: ProximaNova;
     font-weight: bold;
     font-size: 14px;
 }
 
-.spdj-main-row .spdj-side-nav-menu > a {
+.spdj-main-row .spdj-side-nav-container .active > a {
+    color: #015870;
+    font-weight: 600;
+    border-bottom: solid 2px #027ca3;
+}
+
+.spdj-main-row li > a {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
     color: #343434;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: solid 2px transparent;
 }
 
 .spdj-main-row .spdj-side-nav-title {
@@ -493,15 +518,11 @@
 }
 
 .spdj-main-row .spdj-side-nav-title-active {
+    padding: 20px 30px; 
     background-color: #015870;
     font-weight: bold;
     letter-spacing: 2px;
     color: white;
-}
-
-.spdj-main-row .spdj-side-nav-menu-selected a {
-    color: #015870;
-    font-weight: 600;
 }
 /* Side Nav CSS Begins */
 
@@ -1098,5 +1119,5 @@
 /* Main Cards Rows CSS Ends */
 
 .dummy {
-    margin: 100px;
+    height: 10000px;
 }
