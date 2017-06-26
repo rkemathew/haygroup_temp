@@ -467,6 +467,12 @@
     top: 128px;
 }
 
+@media (max-width: 1024px) and (max-width: 1200px) { 
+    .spdj-main-row .spdj-side-nav {
+        width: 235px;
+    }
+}
+
 @media (max-width: 1023px) { /* Do not allow the tabs to be affixed for screens smaller than 1024 width */
     .spdj-main-row .spdj-side-nav.affix {
         position: static;
@@ -493,13 +499,13 @@
     font-size: 14px;
 }
 
-.spdj-main-row .spdj-side-nav-container .active > a {
+.spdj-main-row .spdj-side-nav-container .active a {
     color: #015870;
     font-weight: 600;
     border-bottom: solid 2px #027ca3;
 }
 
-.spdj-main-row li > a {
+.spdj-main-row li a {
     display: block;
     width: 100%;
     margin: 0 auto;
