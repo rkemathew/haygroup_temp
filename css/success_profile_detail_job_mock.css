@@ -372,7 +372,7 @@
 }
 /* Stats Row CSS Ends */
 
-/* Tabs Row CSS Begins */
+/* Middle Tabs Row CSS Begins */
 .spdj-tabsrow {
     width: 100%;
     float: left;
@@ -425,13 +425,16 @@
         position: static;
     }
 }
+/* Middle Tabs Row CSS Ends */
 
+/* Main Cards Rows CSS Begins */
 .spdj-main-row {
     width: 100%;
     margin: 0 auto;
     background-color: #f9f9f9;
 }
 
+/* Side Nav CSS Begins */
 .spdj-main-row .spdj-side-nav-container {
     float: left;
     width: 25%;
@@ -500,7 +503,9 @@
     color: #015870;
     font-weight: 600;
 }
+/* Side Nav CSS Begins */
 
+/* Job Requirements Card CSS Begins */
 .spdj-main-row .spdj-main-container {
     float: left;
     padding: 5px;
@@ -620,7 +625,9 @@
     float: left;
     padding: 10px;
 }
+/* Job Requirements Card CSS Ends */
 
+/* Responsibilities Card CSS Begins */
 .spdj-main-row .spdj-main-respon-card {
     width: 100%;
     margin-top: 30px;
@@ -736,11 +743,103 @@
 .spdj-main-row .spdj-main-respon-item-chart .chartwell-pies .cw-value-two {
     color: #008a95;
 }
+
 .spdj-main-row .spdj-main-respon-item-chart .chartwell-pies .cw-value-one {
     color: lightgray;
 }
+/* Responsibilities Card CSS Ends */
 
-/* Tabs Row CSS Ends */
+.spdj-main-row .spdj-main-bcomp-card {
+    width: 100%;
+    margin-top: 30px;
+    float: left;
+    padding: 20px;
+    border: solid 1px lightgray;
+    box-shadow: 1px 2px 5px #888888;
+    background-color: #ffffff;
+}
+
+.spdj-main-row .spdj-main-bcomp-title {
+    display: block;
+    width: 80%;
+    float: left;
+    font-family: ProximaNova;
+    font-size: 24px;
+    letter-spacing: 0.9px;
+    text-align: left;
+    color: #000000;
+}
+
+.spdj-main-row .spdj-main-bcomp-help {
+    font-size: 15px;
+}
+
+.spdj-main-row .spdj-main-bcomp-title-container {
+    width: 100%;
+    float: left;
+}
+
+.spdj-main-row .spdj-main-bcomp-lvl-title {
+    display: block;
+    width: 20%;
+    float: left;
+    margin-top: 8px;
+    padding-left: 20px;
+    font-family: ProximaNova;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #a6a6a6;
+}
+
+.spdj-main-row .spdj-main-bcomp-item-container {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: dotted 1px lightgray;
+}
+
+.spdj-main-row .spdj-main-bcomp-item-text-container {
+    width: 80%;
+    float: left;
+}
+
+.spdj-main-row .spdj-main-bcomp-item-title {
+    display: block;
+    margin: 10px 0;
+    font-family: ProximaNova;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    color: #027ca3;
+}
+
+.spdj-main-row .spdj-main-bcomp-item-icon {
+    color: #EBB30D;   
+}
+
+.spdj-main-row .spdj-main-bcomp-item-detail {
+    font-family: ProximaNova;
+    font-size: 15px;
+    text-align: left;
+    color: #898989;
+}
+
+.spdj-main-row .spdj-main-bcomp-item-chart {
+    margin-top: 20px;
+}
+
+.spdj-main-row .spdj-main-bcomp-item-stat {
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    color: #929292;
+}
+
+/* Main Cards Rows CSS Ends */
 
 .dummy {
     margin: 100px;
